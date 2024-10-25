@@ -1,0 +1,67 @@
+/* Container for columns */
+.leads-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Each column */
+  .column {
+    width: 23%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .column h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Container for leads within the "Leads" column */
+  .leads-list {
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 5px;
+  }
+  
+  /* Card design for each lead */
+  .lead-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 1rem;
+  }
+  
+  .lead-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Content of the lead card */
+  .lead-content {
+    flex: 1;
+  }
+  
+  .lead-content p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  /* Icon styling */
+  .lead-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0.85;
+  }
+  
